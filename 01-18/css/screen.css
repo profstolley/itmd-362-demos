@@ -8,6 +8,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25em; /* 20 / 16 = 1.25 */
+  line-height: 1.2em; /* 24px line height */
+}
+
+h1, h2, p {
+  padding-bottom: 1.2em; /* 24px / 20 = 1.2 */
+}
+
 
 /* Responsive Media */
 img, audio, video {
