@@ -8,6 +8,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 
+html {
+  padding: 1.2em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.125em; /* 18 / 16px */
+  line-height: 1.2em;
+}
+
 
 /* Responsive Media */
 img, audio, video {
@@ -23,3 +30,13 @@ img, audio, video {
 
 /* ===== STATE STYLES ===== */
 
+@media screen and (min-width: 460px) {
+  html {
+    padding-left: 4.78%; /* 22px / 460 = 0.04782608696 */
+    padding-right: 4.78%; /* 22px / 460 = 0.04782608696 */
+  }
+
+  #content {
+    width: 66%;
+  }
+}
