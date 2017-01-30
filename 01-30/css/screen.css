@@ -15,6 +15,13 @@ img, audio, video {
   max-width: 100%;
 }
 
+/* Form */
+label,
+input {
+  display: block;
+}
+
+
 /* ===== LAYOUT STYLES ===== */
 
 
