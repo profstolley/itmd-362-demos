@@ -193,7 +193,9 @@ h1 {
   font-size: 35.156px;
   line-height: 56px;
 }
-
+p {
+  padding-bottom: 28px;
+}
 
 /* Responsive Media */
 img, audio, video {
@@ -204,7 +206,19 @@ img, audio, video {
 /* Form */
 label,
 input {
+  box-sizing: border-box;
+  width: 100%;
   display: block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: 0;
+  margin: 0;
+  padding: 14px;
+  background: yellow;
+}
+
+input[type="email"] {
 }
 
 
@@ -213,6 +227,9 @@ input {
 
 /* ===== MODULAR STYLES ===== */
 
+form li {
+  margin-bottom: 28px;
+}
 
 /* ===== STATE STYLES ===== */
 
