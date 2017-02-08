@@ -8,6 +8,26 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 
+/*
+  Major Sixth Modular Scale:
+  http://www.modularscale.com/?22&px&1.667&web&text
+*/
+
+html {
+  font-size: 1.375em; /* 22px */
+  line-height: 1.182em; /* 26px / ~ 120% */
+}
+
+h1 {
+  padding-top: 1.182em; /* 26px */
+  padding-bottom: 5.778em; /* 104px / 4 gridlines */
+}
+
+h2 {
+  font-size: 2.779em; /* 61.136px */
+  line-height: 1.276em; /* 78 / 61.136px */
+  padding-bottom: 0.851em; /* 52 / 61.136 */
+}
 
 /* Responsive Media */
 img, audio, video {
