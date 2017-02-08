@@ -14,6 +14,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
+  font-family: 'Bembo W04', Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   font-size: 1.375em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
 }
@@ -28,6 +29,11 @@ h2 {
   line-height: 1.276em; /* 78 / 61.136px */
   padding-bottom: 0.851em; /* 52 / 61.136 */
 }
+
+cite {
+  font-style: italic;
+}
+
 
 /* Responsive Media */
 img, audio, video {
