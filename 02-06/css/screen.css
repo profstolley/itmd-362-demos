@@ -17,6 +17,7 @@ html {
   font-family: 'Bembo W04', Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   font-size: 1.375em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
