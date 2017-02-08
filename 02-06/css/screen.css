@@ -50,3 +50,12 @@ img, audio, video {
 
 /* ===== STATE STYLES ===== */
 
+.wf-active h1 {
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings: "onum";
+  -webkit-font-feature-settings: "onum";
+  font-feature-settings: "onum";
+}
+.wf-active h2 {
+  font-family: 'Bembo W01 Titling';
+}
