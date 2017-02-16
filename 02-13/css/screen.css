@@ -193,6 +193,46 @@ html {
   font-family: 'FF Meta W03', serif;
   font-size: 1.375em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
+  padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
 }
 
+h1,p {
+  padding-bottom: 1.182em; /* 26px / ~ 120% */
+}
+
+label {
+  display: block;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 78px;
+  padding: 26px;
+  border: 0;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: #DDD;
+}
+
+input[type="email"] {
+  padding-bottom: 1.182em; /* 26px / ~ 120% */
+}
+
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  float: left;
+}
+
+input[type="checkbox"] + label {
+  display: inline;
+}
+
+/* ===== MODULAR STYLES ===== */
+form li {
+  padding-bottom: 1.182em; /* 26px / ~ 120% */
+}
