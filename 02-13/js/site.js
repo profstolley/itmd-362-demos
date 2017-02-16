@@ -13,4 +13,7 @@ jQuery(function($) {
       $('#input-email label').removeClass('active');
     }
   });
+  $('#input-age-verification label').on('click', function() {
+    $(this).addClass('icon-ok');
+  });
 });

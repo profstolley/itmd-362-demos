@@ -238,7 +238,8 @@ form li {
 }
 
 /* ===== STATE STYLES ===== */
-.hasjs #input-email {
+.hasjs #input-email,
+.hasjs #input-age-verification {
   position: relative;
 }
 .hasjs #input-email label {
@@ -249,6 +250,16 @@ form li {
 .hasjs #input-email label.active {
   top: -13px;
 }
+
+.hasjs #age-verification {
+  position: absolute;
+  left: -60000px;
+}
+.hasjs #age-verification + label {
+  display: block;
+  padding-left: 52px;
+}
+
 
 /* ===== DEFAULT FONTELLO STYLES ===== */
 
@@ -310,3 +321,8 @@ form li {
 }
 
 .icon-ok:before { content: '\e800'; } /* '' */
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  position: absolute;
+  left: 13px;
+}
