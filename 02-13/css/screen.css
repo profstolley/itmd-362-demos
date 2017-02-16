@@ -236,3 +236,16 @@ input[type="checkbox"] + label {
 form li {
   padding-bottom: 1.182em; /* 26px / ~ 120% */
 }
+
+/* ===== STATE STYLES ===== */
+.hasjs #input-email {
+  position: relative;
+}
+.hasjs #input-email label {
+  transition: top 1s;
+  top: 26px;
+  position: absolute;
+}
+.hasjs #input-email label.active {
+  top: -13px;
+}
