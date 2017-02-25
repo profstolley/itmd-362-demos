@@ -195,10 +195,19 @@ html {
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
+    background-color: #009688;
+
 }
 
 h1,p {
   padding-bottom: 1.182em; /* 26px / ~ 120% */
+}
+
+h1 {
+  color: rgba(0,0,0,0.84);
+}
+p {
+  color: rgba(255,255,255,0.84);
 }
 
 label {
