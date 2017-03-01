@@ -14,7 +14,7 @@ html {
   line-height: 1.2em; /* 24px line height */
 }
 
-h1, h2, p {
+h2, ul, p {
   padding-bottom: 1.2em; /* 24px / 20 = 1.2 */
 }
 
