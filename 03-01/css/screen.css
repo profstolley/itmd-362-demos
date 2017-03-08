@@ -31,4 +31,27 @@ img, audio, video {
 
 
 /* ===== STATE STYLES ===== */
+.has-toolbar body {
+  overflow-x: hidden;
+}
+#content {
+  transition: margin-left 1s;
+}
+.hasjs #content {
+  width: 100%;
+}
+.has-toolbar #content {
+  margin-left: 50%;
+}
 
+.hasjs #tools {
+  transition: opacity 1s 1s;
+  opacity: 0;
+  position: absolute;
+  top: 120px;
+  /*left: -50%;*/
+  left: 5%;
+}
+.has-toolbar #tools {
+  opacity: 1;
+}
