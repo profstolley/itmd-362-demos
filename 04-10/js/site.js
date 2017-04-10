@@ -4,6 +4,9 @@ $.noConflict();
 // jQuery 3.x-style ready event and locally scoped $
 jQuery(function($) {
 
+  // Our test users
+  var users = ['SallySuccess','FreddyFailure','PollyProblem'];
+
   function toggleLabel(oldLabel,newLabel,currentLabel) {
     if (oldLabel === currentLabel) {
       return newLabel;
@@ -13,8 +16,23 @@ jQuery(function($) {
     }
   }
 
+  function currentUser() {
+    if (window.location.hash.length > 0) {
+      var hash = window.location.hash;
+      var user = window.location.hash.split('#')[1];
+      return user;
+    }
+    else {
+      return 3;
+    }
+  }
+
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
+
+  $('#account-details').append(
+    ' <b id="logged-in-user">for '+users[currentUser()]+'</b>');
+
 
   // A little usability feature; let people show the password if privacy isn't
   // a big deal (for example, the user is alone)
@@ -26,13 +44,12 @@ jQuery(function($) {
 
 
 
-
   // Mock up unsuccessful and successful login attempts; this demo requires
   // a username of 'tbernerslee' and will accept any password
   $('#login').on('submit', function(e) {
-    if ($('#username').val() === 'tbernerslee') {
+    if ($('#username').val() === users[0]) {
       // success; send the user to the account.html page
-      window.location.replace('account.html');
+      window.location.replace('account.html#0');
     } else {
       console.log('Bad username');
       $('#login').prepend('<div class="error">Incorrect Username or Password</div>');
