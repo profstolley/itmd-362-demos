@@ -15,6 +15,20 @@ jQuery(function($) {
     return value;
   }
 
+  $.fn.toggleLabel = function(oldLabel,newLabel) {
+    /* Logic to toggle a label */
+    var currentLabel = this.html();
+    this.html(toggleValue(oldLabel,newLabel,currentLabel));
+    return this;
+  };
+
+  $.fn.toggleAttr = function(attr,oldValue,newValue) {
+    /* Logic to toggle an attribute */
+    var currentValue = this.attr(attr);
+    this.attr(attr, toggleValue(oldValue,newValue,currentValue));
+    return this;
+  };
+
   function currentUser() {
     if (window.location.hash.length > 0) {
       var hash = window.location.hash;
