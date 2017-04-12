@@ -7,28 +7,7 @@ jQuery(function($) {
   // Our test users
   var users = ['SallySuccess','FreddyFailure','PollyProblem'];
 
-  function toggleValue(oldValue,newValue,currentValue) {
-    var value = oldValue;
-    if (currentValue === oldValue) {
-      value = newValue;
-    }
-    return value;
-  }
-
-  $.fn.toggleLabel = function(oldLabel,newLabel) {
-    /* Logic to toggle a label */
-    var currentLabel = this.html();
-    this.html(toggleValue(oldLabel,newLabel,currentLabel));
-    return this;
-  };
-
-  $.fn.toggleAttr = function(attr,oldValue,newValue) {
-    /* Logic to toggle an attribute */
-    var currentValue = this.attr(attr);
-    this.attr(attr, toggleValue(oldValue,newValue,currentValue));
-    return this;
-  };
-
+  // Function to establish a current user based on URL hash
   function currentUser() {
     if (window.location.hash.length > 0) {
       var hash = window.location.hash;
@@ -39,6 +18,31 @@ jQuery(function($) {
       return 3;
     }
   }
+
+  // Generic toggler function, used in jQuery methods below
+  function toggleValue(oldValue,newValue,currentValue) {
+    var value = oldValue;
+    if (currentValue === oldValue) {
+      value = newValue;
+    }
+    return value;
+  }
+
+  // jQuery method to toggle a label (HTML text)
+  $.fn.toggleLabel = function(oldLabel,newLabel) {
+    var currentLabel = this.html();
+    this.html(toggleValue(oldLabel,newLabel,currentLabel));
+    return this;
+  };
+
+  // jQuery method to toggle a particular attribute's value
+  $.fn.toggleAttr = function(attr,oldValue,newValue) {
+    var currentValue = this.attr(attr);
+    this.attr(attr, toggleValue(oldValue,newValue,currentValue));
+    return this;
+  };
+
+  //========= jQuery to Manipulate the Page =========
 
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
