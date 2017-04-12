@@ -57,6 +57,7 @@ jQuery(function($) {
   $('#password-toggle').on('click', function(e){
     $('#password').toggleAttr('type','password','text');
     $('#password-toggle').toggleLabel('Show Password','Hide Password');
+    e.preventDefault();
   });
 
 
