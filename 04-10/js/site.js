@@ -7,13 +7,12 @@ jQuery(function($) {
   // Our test users
   var users = ['SallySuccess','FreddyFailure','PollyProblem'];
 
-  function toggleLabel(oldLabel,newLabel,currentLabel) {
-    if (oldLabel === currentLabel) {
-      return newLabel;
+  function toggleValue(oldValue,newValue,currentValue) {
+    var value = oldValue;
+    if (currentValue === oldValue) {
+      value = newValue;
     }
-    else {
-      return oldLabel;
-    }
+    return value;
   }
 
   function currentUser() {
