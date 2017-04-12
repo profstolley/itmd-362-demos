@@ -51,8 +51,8 @@ jQuery(function($) {
   // a big deal (for example, the user is alone)
   $('#password-input').append('<a href="#null" id="password-toggle">Show Password</a>');
   $('#password-toggle').on('click', function(e){
-    $('#password').attr('type',toggleLabel('password','text',$('#password').attr('type')));
-    $('#password-toggle').html(toggleLabel('Show Password','Hide Password', $('#password-toggle').html()));
+    $('#password').toggleAttr('type','password','text');
+    $('#password-toggle').toggleLabel('Show Password','Hide Password');
   });
 
 
